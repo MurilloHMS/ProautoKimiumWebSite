@@ -1,0 +1,72 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img{
+    height: 35px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    margin: 0 15px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover{
+    color: #63C29D;
+    cursor: pointer;
+}
+
+.grp-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.grp-menu li{
+    margin: 0 10px;
+}
+
+.grp-menu a img{
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.grp-menu a:hover img{
+    transform: scale(1.2);
+}
+
+.grp-menu button{
+    background-color: #63C29D ;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 20px;
+    border-radius: 12px;
+    border-color: transparent;
+    color: white;
+}
+
+.grp-menu button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background: #94ccb6;
+}
