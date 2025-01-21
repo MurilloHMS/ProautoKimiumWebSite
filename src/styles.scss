@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html, body{
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat';
 }
 
 app-root{
