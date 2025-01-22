@@ -1,0 +1,88 @@
+@import '../../style/variables.scss';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $banner-color;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.home-text {
+    max-width: 50%;
+}
+
+.home-text h2 {
+    font-size: 2.5em;
+    color: $text-primary-color;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: $text-secondary-color;
+    margin-bottom: 20px;
+}
+
+.home-text .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: backgroung-color 0.3s;
+}
+
+.home-text .cta-button:hover {
+    background-color: #019a7a;
+}
+
+.home-image {
+    max-width: 40%;
+}
+
+.home-image img {
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    max-width: 30%;
+}
+
+.feature h3 {
+    color: $primary-color;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: $text-secondary-color;
+    font-size: 1em;
+}
+
+.home-about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
