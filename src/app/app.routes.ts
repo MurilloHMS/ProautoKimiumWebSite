@@ -10,13 +10,13 @@ import { LoginComponent } from './login/login.component';
 
 
 export const routes: Routes = [
-    { path: "", component: HomeComponent},
-    { path: "produtos", component: ProdutosComponent},
-    { path: "clientes", component: ClientesComponent},
-    { path: "empresa", component: EmpresaComponent},
-    { path: "contato", component: ContatoComponent},
-    { path: "carrinho", component: CarrinhoComponent},
-    { path: "login", component: LoginComponent}
+    { path: '', component: HomeComponent, pathMatch: 'full'},
+    { path: 'clientes', component: ClientesComponent, pathMatch: 'full'},
+    { path: 'empresa', component: EmpresaComponent, pathMatch: 'full'},
+    { path: 'contato', component: ContatoComponent, pathMatch: 'full'},
+    { path: 'carrinho', component: CarrinhoComponent, pathMatch: 'full'},
+    { path: 'login', component: LoginComponent, pathMatch: 'full'},
+    { path: 'produtos', component: ProdutosComponent, pathMatch: 'full'},
 ];
 
 @NgModule({
