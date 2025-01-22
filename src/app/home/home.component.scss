@@ -57,6 +57,14 @@
     width: 100%;
 }
 
+.home-video {
+    max-width: 45%;
+}
+
+.home-video video {
+    width: 100%;
+}
+
 .features {
     display: flex;
     justify-content: space-between;
@@ -84,5 +92,38 @@
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+}
+
+.home-nossos-valores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+
+    p{
+        font-size: 1em;
+    }
+}
+
+.features-nossos-valores {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.feature-nossos-valores {
+    text-align: center;
+    max-width: 40%;
+
+    p {
+        color: $text-secondary-color;
+        font-size: 14px;
+    }
+
+    h3 {
+        color: $primary-color;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
 }
 
