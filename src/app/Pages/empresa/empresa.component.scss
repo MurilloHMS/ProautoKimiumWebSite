@@ -1,0 +1,45 @@
+@import "../../../style/variables.scss";
+
+.section-titulo{
+    background: $primary-color;
+    width: 20%;
+    padding: 20px 15px;
+    border-radius: 0 50px 50px 0;
+    margin-top: 35px;
+    color: $banner-color;
+    font-weight: bold;
+
+    
+}
+.section-titulo:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.section-apresentacao{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 30px;
+    padding: 12px;
+    font-size: 1.2em;
+}
+
+.section-produtos-e-servicos { 
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 30px;
+    padding: 12px;
+
+    h5 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    p{
+        padding: 6px;
+        
+    }
+}
