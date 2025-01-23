@@ -68,6 +68,10 @@ label {
     width: auto;
 }
 
+.checkbox input:hover{
+    cursor: pointer;
+}
+
 button {
     background-color: $primary-color;
     color: white;
