@@ -1,12 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ProdutosComponent } from './produtos/produtos.component';
-import { ClientesComponent } from './clientes/clientes.component';
-import { EmpresaComponent } from './empresa/empresa.component';
-import { ContatoComponent } from './contato/contato.component';
-import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { NgModule } from '@angular/core';
-import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { ProdutosComponent } from './Pages/produtos/produtos.component';
+import { ClientesComponent } from './Pages/clientes/clientes.component';
+import { EmpresaComponent } from './Pages/empresa/empresa.component';
+import { ContatoComponent } from './Pages/contato/contato.component';
+import { CarrinhoComponent } from './Pages/carrinho/carrinho.component';
+import { LoginComponent } from './Pages/login/login.component';
 
 
 export const routes: Routes = [
