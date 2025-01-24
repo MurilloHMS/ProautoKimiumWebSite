@@ -46,9 +46,17 @@ textarea {
     box-shadow: 0 1px 0 0 ;
     }
 
+input:focus {
+    outline: none;
+}
+
 textarea {
     resize: none;
     height: 80px;
+}
+
+textarea:focus {
+    outline: none;
 }
 
 label {
