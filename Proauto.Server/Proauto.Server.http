@@ -1,0 +1,6 @@
+@Proauto.Server_HostAddress = http://localhost:5081
+
+GET {{Proauto.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
