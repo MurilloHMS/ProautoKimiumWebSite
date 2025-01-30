@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { categorias, produtos } from '../../../Type/produtos';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { SortCategoriesPipe } from '../../Pipes/sort-categories.pipe';
 
 @Component({
   selector: 'app-lista-produtos',
