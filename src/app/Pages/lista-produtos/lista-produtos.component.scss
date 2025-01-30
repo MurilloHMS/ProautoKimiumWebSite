@@ -1,27 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "../../../style/variables.scss";
 
-body {
-    background-color: #f8f9fa;
-    color: #2c3e50;
-    line-height: 1.6;
-}
-
-.container {
+main {
     display: flex;
-    min-height: 100vh;
+    flex-direction: row;
 }
-
-/* Menu Lateral */
 .menu-categorias {
-    width: 30%;
-    background: #2c3e50;
-    color: #ecf0f1;
+    width: 18%;
+    background: $secondary-color;
+    color: #fff;
     padding: 20px;
 }
+
 
 .menu-categorias h2 {
     font-size: 1.5rem;
@@ -60,7 +49,6 @@ body {
 
 
 .produtos-container {
-    margin-left: 300px;
     padding: 30px;
     width: calc(100% - 300px);
     display: flex;
