@@ -6,7 +6,6 @@ main {
 }
 .menu-categorias {
     width: 18%;
-    background: $secondary-color;
     color: #fff;
     padding: 20px;
 }
@@ -16,7 +15,7 @@ main {
     font-size: 1.5rem;
     margin-bottom: 25px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #34495e;
+    border-bottom: 2px solid #1abc9c;
 }
 
 .categoria {
@@ -38,7 +37,7 @@ main {
 }
 
 .categoria a {
-    color: #bdc3c7;
+    color: $secondary-color;
     text-decoration: none;
     transition: color 0.3s ease;
 }

@@ -2,16 +2,12 @@
     <section class="menu-categorias">
         <h2>Navegue por Categorias</h2>
         <div class="itens-categorias">
-            <div class="categoria">
-                <h3>Alimentos</h3>
+            <div class="categoria" *ngFor="let categoria of categorias">
+                <h3>{{ categoria.nome }}</h3>
                 <ul>
-                    <li><a href="/produtos/lista/#laticinios">Laticinios</a></li>
-                    <li><a href="/produtos/lista/#bebidas">Bebidas</a></li>
-                    <li><a href="/produtos/lista/#laticinios">Frigorificos</a></li>
-                    <li><a href="/produtos/lista/#laticinios">Processadoras de Alimentos</a></li>
-                    <li><a href="/produtos/lista/#laticinios">Mercados</a></li>
-                    <li><a href="/produtos/lista/#laticinios">Panificadoras</a></li>
-                    <li><a href="/produtos/lista/#laticinios">Confeitarias</a></li>
+                    <li *ngFor="let item of categoria.produtos">
+                        <a [routerLink]="['/produtos/lista']" [fragment]="item.id">{{ item.nome }}</a>
+                      </li>
                 </ul>
             </div>
             <div class="categoria">
@@ -78,113 +74,18 @@
         </div>
     </section>
     <section class="produtos-container">
-        <!-- Seção Laticínios -->
-        <section class="categoria-produtos" id="laticinios">
-            <h2>Laticínios</h2>
+        <section class="categoria-produtos" *ngFor="let categoriaKey of produtosKeys">
+            <h2>{{ categoriaKey | titlecase}}</h2>
             <div class="produtos-lista">
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
+              <div class="produto-card" *ngFor="let produto of produtos[categoriaKey]">
+                <img src="../../../assets/images/{{ produto.imagem }}" alt="{{ produto.titulo }}">
+                <h1>{{ produto.titulo }}</h1>
+                <p><b>Produto: </b>{{ produto.titulo }}</p>
+                <p><b>Cor: </b>{{ produto.cor }}</p>
+                <p><b>Diluição:</b> {{ produto.diluicao }}</p>
+                <button>Adicionar ao Carrinho</button>
+              </div>
             </div>
-        </section>
-    
-        <section class="categoria-produtos" id="bebidas">
-            <h2>Bebidas</h2>
-            <div class="produtos-lista">
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-                <div class="produto-card">
-                    <img src="../../../assets/images/kimi-klap.png" alt="Produto">
-                    <h1>Desengordurante e Desengrachante alcalino</h1>
-                    <p>Kimi Klap - BB Preta</p>
-                    <p>Diluição: 1 a 10%</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-    
-            </div>
-        </section>
+          </section>
     </section>
 </main>
