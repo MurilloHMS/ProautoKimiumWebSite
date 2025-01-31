@@ -1,12 +1,39 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../../services/cart.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-carrinho',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './carrinho.component.html',
   styleUrl: './carrinho.component.scss'
 })
 export class CarrinhoComponent {
+  produtos: any[] = [];
 
+  constructor(private cartService: CartService) {}
+
+  ngOnInit() {
+    this.cartService.getCart().subscribe(produtos => {
+      this.produtos = produtos;
+      console.log('Carrinho atualizado:', this.produtos);
+    });
+  }
+
+  gerarMensagemWhatsapp() {
+    if (this.produtos.length === 0) {
+      alert('Seu carrinho está vazio!');
+      return;
+    }
+
+    let mensagem = 'Olá, gostaria de solicitar um orçamento dos seguintes itens:\n';
+    this.produtos.forEach((produto, index) => {
+      mensagem += `${index + 1}. ${produto.titulo} - ${produto.descricao} - ${produto.cor} - ${produto.diluicao}\n`;
+    });
+
+    const numeroWhatsApp = '5511975797732';
+    const url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  }
 }

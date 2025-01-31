@@ -205,5 +205,330 @@ export const categorias = [
         cor: "Incolor a amarelo",
         diluicao: "1 a 10%"
       }
+    ],
+    frigorificos: [
+      {
+        imagem: "kimi-klap.png",
+        titulo: "Desengordurante e Desengraxante Alcalino",
+        descricao: "Kimi Klap - BB Preta",
+        cor: "Laranja",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "kimi-klore.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "klinbe.png",
+        titulo: "Desincrustante Alcalino",
+        descricao: "Klinbe",
+        cor: "Laranja",
+        diluicao: "2%"
+      },
+      {
+        imagem: "neuter-use.png",
+        titulo: "Detergente neutro de uso geral",
+        descricao: "Neuter use - Natural",
+        cor: "Amarelo",
+        diluicao: "6 a 50%"
+      },
+      {
+        imagem: "neuterax-yellow.png",
+        titulo: "Desengorgurante Levemente Alcalino",
+        descricao: "Neuterax Yellow",
+        cor: "amarelo",
+        diluicao: "5 a 20%"
+      },
+      {
+        imagem: "pro-bac-al.png",
+        titulo: "Desinfetante Quartenário",
+        descricao: "Probac Al",
+        cor: "Azul",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "pro-ha-1000-cl.png",
+        titulo: "Alcalino Clorado Cip",
+        descricao: "Pro Ha 1000CL",
+        cor: "Amarelo",
+        diluicao: "0,5 a 2%"
+      },
+      {
+        imagem: "pro-ha-1000-decrust.png",
+        titulo: "Detergente Ácido / CIP",
+        descricao: "Pro Ha 1000 Decrust - Natural",
+        cor: "Incolor",
+        diluicao: "1 a 5%"
+      },
+      {
+        imagem: "pro-ha-alcb.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      }
+    ],
+    Processadoras: [
+      {
+        imagem: "kimi-klap.png",
+        titulo: "Desengordurante e Desengraxante Alcalino",
+        descricao: "Kimi Klap - BB Preta",
+        cor: "Laranja",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "kimi-klore.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "klinbe.png",
+        titulo: "Desincrustante Alcalino",
+        descricao: "Klinbe",
+        cor: "Laranja",
+        diluicao: "2%"
+      },
+      {
+        imagem: "neuter-use.png",
+        titulo: "Detergente neutro de uso geral",
+        descricao: "Neuter use - Natural",
+        cor: "Amarelo",
+        diluicao: "6 a 50%"
+      },
+      {
+        imagem: "neuterax-yellow.png",
+        titulo: "Desengorgurante Levemente Alcalino",
+        descricao: "Neuterax Yellow",
+        cor: "amarelo",
+        diluicao: "5 a 20%"
+      },
+      {
+        imagem: "pro-bac-al.png",
+        titulo: "Desinfetante Quartenário",
+        descricao: "Probac Al",
+        cor: "Azul",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "pro-ha-1000-cl.png",
+        titulo: "Alcalino Clorado Cip",
+        descricao: "Pro Ha 1000CL",
+        cor: "Amarelo",
+        diluicao: "0,5 a 2%"
+      },
+      {
+        imagem: "pro-ha-1000-decrust.png",
+        titulo: "Detergente Ácido / CIP",
+        descricao: "Pro Ha 1000 Decrust - Natural",
+        cor: "Incolor",
+        diluicao: "1 a 5%"
+      },
+      {
+        imagem: "pro-ha-alcb.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      }
+    ],
+    mercados: [
+      {
+        imagem: "kimi-klap.png",
+        titulo: "Desengordurante e Desengraxante Alcalino",
+        descricao: "Kimi Klap - BB Preta",
+        cor: "Laranja",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "kimi-klore.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "klinbe.png",
+        titulo: "Desincrustante Alcalino",
+        descricao: "Klinbe",
+        cor: "Laranja",
+        diluicao: "2%"
+      },
+      {
+        imagem: "neuter-use.png",
+        titulo: "Detergente neutro de uso geral",
+        descricao: "Neuter use - Natural",
+        cor: "Amarelo",
+        diluicao: "6 a 50%"
+      },
+      {
+        imagem: "neuterax-yellow.png",
+        titulo: "Desengorgurante Levemente Alcalino",
+        descricao: "Neuterax Yellow",
+        cor: "amarelo",
+        diluicao: "5 a 20%"
+      },
+      {
+        imagem: "pro-bac-al.png",
+        titulo: "Desinfetante Quartenário",
+        descricao: "Probac Al",
+        cor: "Azul",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "pro-ha-1000-cl.png",
+        titulo: "Alcalino Clorado Cip",
+        descricao: "Pro Ha 1000CL",
+        cor: "Amarelo",
+        diluicao: "0,5 a 2%"
+      },
+      {
+        imagem: "pro-ha-1000-decrust.png",
+        titulo: "Detergente Ácido / CIP",
+        descricao: "Pro Ha 1000 Decrust - Natural",
+        cor: "Incolor",
+        diluicao: "1 a 5%"
+      },
+      {
+        imagem: "pro-ha-alcb.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      }
+    ],
+    panificadoras: [
+      {
+        imagem: "kimi-klap.png",
+        titulo: "Desengordurante e Desengraxante Alcalino",
+        descricao: "Kimi Klap - BB Preta",
+        cor: "Laranja",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "kimi-klore.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "klinbe.png",
+        titulo: "Desincrustante Alcalino",
+        descricao: "Klinbe",
+        cor: "Laranja",
+        diluicao: "2%"
+      },
+      {
+        imagem: "neuter-use.png",
+        titulo: "Detergente neutro de uso geral",
+        descricao: "Neuter use - Natural",
+        cor: "Amarelo",
+        diluicao: "6 a 50%"
+      },
+      {
+        imagem: "neuterax-yellow.png",
+        titulo: "Desengorgurante Levemente Alcalino",
+        descricao: "Neuterax Yellow",
+        cor: "amarelo",
+        diluicao: "5 a 20%"
+      },
+      {
+        imagem: "pro-bac-al.png",
+        titulo: "Desinfetante Quartenário",
+        descricao: "Probac Al",
+        cor: "Azul",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "pro-ha-1000-cl.png",
+        titulo: "Alcalino Clorado Cip",
+        descricao: "Pro Ha 1000CL",
+        cor: "Amarelo",
+        diluicao: "0,5 a 2%"
+      },
+      {
+        imagem: "pro-ha-1000-decrust.png",
+        titulo: "Detergente Ácido / CIP",
+        descricao: "Pro Ha 1000 Decrust - Natural",
+        cor: "Incolor",
+        diluicao: "1 a 5%"
+      },
+      {
+        imagem: "pro-ha-alcb.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      }
+    ],
+    confeitarias: [
+      {
+        imagem: "kimi-klap.png",
+        titulo: "Desengordurante e Desengraxante Alcalino",
+        descricao: "Kimi Klap - BB Preta",
+        cor: "Laranja",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "kimi-klore.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "klinbe.png",
+        titulo: "Desincrustante Alcalino",
+        descricao: "Klinbe",
+        cor: "Laranja",
+        diluicao: "2%"
+      },
+      {
+        imagem: "neuter-use.png",
+        titulo: "Detergente neutro de uso geral",
+        descricao: "Neuter use - Natural",
+        cor: "Amarelo",
+        diluicao: "6 a 50%"
+      },
+      {
+        imagem: "neuterax-yellow.png",
+        titulo: "Desengorgurante Levemente Alcalino",
+        descricao: "Neuterax Yellow",
+        cor: "amarelo",
+        diluicao: "5 a 20%"
+      },
+      {
+        imagem: "pro-bac-al.png",
+        titulo: "Desinfetante Quartenário",
+        descricao: "Probac Al",
+        cor: "Azul",
+        diluicao: "1 a 10%"
+      },
+      {
+        imagem: "pro-ha-1000-cl.png",
+        titulo: "Alcalino Clorado Cip",
+        descricao: "Pro Ha 1000CL",
+        cor: "Amarelo",
+        diluicao: "0,5 a 2%"
+      },
+      {
+        imagem: "pro-ha-1000-decrust.png",
+        titulo: "Detergente Ácido / CIP",
+        descricao: "Pro Ha 1000 Decrust - Natural",
+        cor: "Incolor",
+        diluicao: "1 a 5%"
+      },
+      {
+        imagem: "pro-ha-alcb.png",
+        titulo: "Sanitizante Clorado",
+        descricao: "Kimi Klore",
+        cor: "Incolor a amarelo",
+        diluicao: "1 a 10%"
+      }
     ]
   };

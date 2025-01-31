@@ -1,1 +1,7 @@
-<p>carrinho works!</p>
+<h2>Meu Carrinho</h2>
+<ul>
+  <li *ngFor="let produto of produtos">
+    {{ produto.titulo }} - {{ produto.descricao }} - {{ produto.cor }} - {{ produto.diluicao }}
+  </li>
+</ul>
+<button (click)="gerarMensagemWhatsapp()">Enviar Orçamento pelo WhatsApp</button>

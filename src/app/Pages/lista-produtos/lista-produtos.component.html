@@ -22,7 +22,7 @@
                 <p><b>Produto: </b>{{ produto.descricao }}</p>
                 <p><b>Cor: </b>{{ produto.cor }}</p>
                 <p><b>Diluição:</b> {{ produto.diluicao }}</p>
-                <button>Adicionar ao Carrinho</button>
+                <button (click)="adicionarAoCarrinho(produto)">Adicionar ao Carrinho</button>
               </div>
             </div>
           </section>
