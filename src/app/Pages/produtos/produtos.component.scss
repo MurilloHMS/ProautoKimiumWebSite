@@ -91,27 +91,23 @@
             color: $text-primary-color;
         }
 
-        button {
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
             background-color: $primary-color;
             width: 100%;
             font-size: 14px;
             font-weight: bold;
             padding: 8px 20px;
             border-radius: 12px;
-            border-color: transparent;
-            color: white;
-            cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
 
             &:hover {
                 background-color: $primary-hover-color;
                 transform: scale(1.05);
             }
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
+            
         }
     }
 }
