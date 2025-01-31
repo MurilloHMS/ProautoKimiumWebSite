@@ -1,7 +1,15 @@
-<h2>Meu Carrinho</h2>
-<ul>
-  <li *ngFor="let produto of produtos">
-    {{ produto.titulo }} - {{ produto.descricao }} - {{ produto.cor }} - {{ produto.diluicao }}
-  </li>
-</ul>
-<button (click)="gerarMensagemWhatsapp()">Enviar Orçamento pelo WhatsApp</button>
+<div class="container">
+    <h2>Meu Carrinho</h2>
+    <div class="produtos-lista">
+        <div class="produto-card" *ngFor="let produto of produtos">
+            <img src="../../../assets/images/kimi-klap.png" alt="teste">
+            <div class="produto-dados">
+                <h1>{{ produto.titulo}}</h1>
+                <p><b>Produto: </b>{{ produto.descricao }}</p>
+                <p><b>Cor: </b>{{ produto.cor }}</p>
+                <p><b>Diluição:</b>{{ produto.diluicao }}</p>
+            </div>
+        </div>
+    </div>
+    <button (click)="gerarMensagemWhatsapp()">Enviar Orçamento pelo WhatsApp</button>
+</div>

@@ -27,13 +27,13 @@ export class CarrinhoComponent {
       return;
     }
 
-    let mensagem = 'Olá, gostaria de solicitar um orçamento dos seguintes itens:\n';
+    let mensagem = 'Olá, gostaria de solicitar um orçamento dos seguintes itens:%0A%0A';
     this.produtos.forEach((produto, index) => {
-      mensagem += `${index + 1}. ${produto.titulo} - ${produto.descricao} - ${produto.cor} - ${produto.diluicao}\n`;
+      mensagem += `    ${index + 1}. ${produto.titulo} - ${produto.descricao} - ${produto.cor} - ${produto.diluicao}%0A`;
     });
 
     const numeroWhatsApp = '5511975797732';
-    const url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
+    const url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensagem}`;
     window.open(url, '_blank');
   }
 }
