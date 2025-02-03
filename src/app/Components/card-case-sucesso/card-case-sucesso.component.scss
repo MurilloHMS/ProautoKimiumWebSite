@@ -1,0 +1,74 @@
+@import '../../../style/variables.scss';
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: $banner-color;
+    align-items: center;
+    max-width: 60%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    color: $text-primary-color;
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.check-icon {
+    margin-right: 5px;
+}
+
+.ver-mais {
+    display: inline-block;
+    margin-top: 10px;
+    color: $primary-color;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: right;
+
+    &:hover {
+        color: $primary-hover-color;
+    }
+}

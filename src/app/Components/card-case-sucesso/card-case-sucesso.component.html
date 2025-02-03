@@ -1,0 +1,14 @@
+<div class="card">
+    <img [src]="imagem" alt="Logo {{ titulo }}" class="logo">
+    <div class="conteudo">
+        <h3>{{ titulo }}</h3>
+        <p>{{ descricao }}</p>
+        <h4>Nossos resultados</h4>
+        <ul>
+            <li *ngFor="let item of resultado">
+                <span class="class-icon">✅</span>{{ item.texto }}
+            </li>
+        </ul>
+        <a [routerLink]="link" class="ver-mais">Ver mais</a>
+    </div>   
+</div>
