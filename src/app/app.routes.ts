@@ -8,6 +8,7 @@ import { ContatoComponent } from './Pages/contato/contato.component';
 import { CarrinhoComponent } from './Pages/carrinho/carrinho.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { ListaProdutosComponent } from './Pages/lista-produtos/lista-produtos.component';
+import { CasesSucessoComponent } from './Pages/cases-sucesso/cases-sucesso.component';
 
 
 export const routes: Routes = [
@@ -18,7 +19,8 @@ export const routes: Routes = [
     { path: 'carrinho', component: CarrinhoComponent, pathMatch: 'full'},
     { path: 'login', component: LoginComponent, pathMatch: 'full'},
     { path: 'produtos', component: ProdutosComponent, pathMatch: 'full'},
-    { path: 'produtos/lista', component: ListaProdutosComponent, pathMatch: 'full'}
+    { path: 'produtos/lista', component: ListaProdutosComponent, pathMatch: 'full'},
+    { path:  'cases-sucesso', component: CasesSucessoComponent, pathMatch: 'full'},
 ];
 
 @NgModule({
