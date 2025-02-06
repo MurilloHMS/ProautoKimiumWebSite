@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './Pages/home/home.component';
-import { ProdutosComponent } from './Pages/produtos/produtos.component';
+import { ProdutosComponent } from './Components/produtos/produtos.component';
 import { ClientesComponent } from './Pages/clientes/clientes.component';
 import { EmpresaComponent } from './Pages/empresa/empresa.component';
 import { ContatoComponent } from './Pages/contato/contato.component';
@@ -18,7 +18,6 @@ export const routes: Routes = [
     { path: 'contato', component: ContatoComponent, pathMatch: 'full'},
     { path: 'carrinho', component: CarrinhoComponent, pathMatch: 'full'},
     { path: 'login', component: LoginComponent, pathMatch: 'full'},
-    { path: 'produtos', component: ProdutosComponent, pathMatch: 'full'},
     { path: 'produtos/lista', component: ListaProdutosComponent, pathMatch: 'full'},
     { path:  'cases-sucesso', component: CasesSucessoComponent, pathMatch: 'full'},
 ];
