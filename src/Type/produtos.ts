@@ -107,7 +107,7 @@ export const categorias = [
       },
       {
         imagem: "neuterax-yellow.png",
-        titulo: "Desengorgurante Levemente Alcalino",
+        titulo: "Desengordurante Levemente Alcalino",
         descricao: "Neuterax Yellow",
         cor: "amarelo",
         diluicao: "5 a 20%"
@@ -172,7 +172,7 @@ export const categorias = [
       },
       {
         imagem: "neuterax-yellow.png",
-        titulo: "Desengorgurante Levemente Alcalino",
+        titulo: "Desengordurante Levemente Alcalino",
         descricao: "Neuterax Yellow",
         cor: "amarelo",
         diluicao: "5 a 20%"
@@ -237,7 +237,7 @@ export const categorias = [
       },
       {
         imagem: "neuterax-yellow.png",
-        titulo: "Desengorgurante Levemente Alcalino",
+        titulo: "Desengordurante Levemente Alcalino",
         descricao: "Neuterax Yellow",
         cor: "amarelo",
         diluicao: "5 a 20%"
@@ -432,7 +432,7 @@ export const categorias = [
       },
       {
         imagem: "neuterax-yellow.png",
-        titulo: "Desengorgurante Levemente Alcalino",
+        titulo: "Desengordurante Levemente Alcalino",
         descricao: "Neuterax Yellow",
         cor: "amarelo",
         diluicao: "5 a 20%"
@@ -497,7 +497,7 @@ export const categorias = [
       },
       {
         imagem: "neuterax-yellow.png",
-        titulo: "Desengorgurante Levemente Alcalino",
+        titulo: "Desengordurante Levemente Alcalino",
         descricao: "Neuterax Yellow",
         cor: "amarelo",
         diluicao: "5 a 20%"
