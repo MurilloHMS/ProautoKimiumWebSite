@@ -271,7 +271,7 @@ export const categorias = [
         diluicao: "1 a 10%"
       }
     ],
-    Processadoras: [
+    processadoras: [
       {
         imagem: "kimi-klap.png",
         titulo: "Desengordurante e Desengraxante Alcalino",
