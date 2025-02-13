@@ -26,6 +26,7 @@ export class CarrinhoComponent {
       alert('Seu carrinho está vazio!');
       return;
     }
+    
 
     let mensagem = 'Olá, gostaria de solicitar um orçamento dos seguintes itens:%0A%0A';
     this.produtos.forEach((produto, index) => {
@@ -35,5 +36,10 @@ export class CarrinhoComponent {
     const numeroWhatsApp = '5511975797732';
     const url = `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensagem}`;
     window.open(url, '_blank');
+  }
+
+  limparCarrinho() {
+    this.cartService.clearCart();
+    alert('Carrinho limpo com sucesso!');
   }
 }

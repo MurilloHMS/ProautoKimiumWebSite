@@ -15,7 +15,12 @@
         <ul class="grp-menu">
             <!-- <li><button><a routerLink="login" href="/login">Login</a></button></li>
             | -->
-            <li><a routerLink="carrinho" href="/carrinho"><img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras "></a></li>
+            <li class="carrinho-container">
+                <a routerLink="carrinho" href="/carrinho">
+                    <img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras ">
+                    <span class="badge" *ngIf="quantidadeProdutos > 0">{{ quantidadeProdutos }}</span>
+                </a>
+            </li>
         </ul>
     </div>
 </header>

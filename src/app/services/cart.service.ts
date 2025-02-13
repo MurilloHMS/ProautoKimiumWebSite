@@ -4,23 +4,35 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CartService {
-  private cart: any[] = [];
+  private cart: any[] = JSON.parse(localStorage.getItem('cart') || '[]');
   private cartSubject = new BehaviorSubject<any[]>(this.cart);
+  private cartCountSubject = new BehaviorSubject<number>(this.cart.length);
+
+  constructor() {
+    this.cartSubject.subscribe(cart => {
+      localStorage.setItem('cart', JSON.stringify(cart));
+      this.cartCountSubject.next(cart.length);
+    });
+  }
 
   getCart() {
     return this.cartSubject.asObservable();
   }
 
+  getCartCount() {
+    return this.cartCountSubject.asObservable();
+  }
+
   addToCart(produto: any) {
     this.cart.push(produto);
-    this.cartSubject.next(this.cart);
-    console.log('Produto adicionado ao carrinho:', produto);
-    console.log('Carrinho atual:', this.cart);
+    this.cartSubject.next([...this.cart]);
   }
 
   clearCart() {
     this.cart = [];
     this.cartSubject.next(this.cart);
+    localStorage.removeItem('cart');
   }
 }
