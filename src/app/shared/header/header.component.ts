@@ -12,6 +12,11 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
   quantidadeProdutos = 0;
+  menuAberto = false;
+
+  toggleMenu() {
+    this.menuAberto = !this.menuAberto;
+  }
 
   constructor(private cartService: CartService) {}
 

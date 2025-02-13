@@ -2,7 +2,13 @@
     <div class="logo">
         <img src="../../../assets/images/logo-proauto.png" alt="Logo da Empresa">
     </div>
-    <nav class="menu">
+
+    <!-- Ícone do menu hambúrguer -->
+    <button class="menu-toggle" (click)="toggleMenu()">
+        ☰
+    </button>
+
+    <nav class="menu" [class.active]="menuAberto">
         <ul>
             <li><a routerLink="">Home</a></li>
             <li><a routerLink="produtos/lista">Produtos</a></li>
@@ -11,13 +17,12 @@
             <li><a routerLink="contato">Contato</a></li>
         </ul>
     </nav>
-    <div >
+
+    <div>
         <ul class="grp-menu">
-            <!-- <li><button><a routerLink="login" href="/login">Login</a></button></li>
-            | -->
             <li class="carrinho-container">
-                <a routerLink="carrinho" href="/carrinho">
-                    <img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras ">
+                <a routerLink="carrinho">
+                    <img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras">
                     <span class="badge" *ngIf="quantidadeProdutos > 0">{{ quantidadeProdutos }}</span>
                 </a>
             </li>
