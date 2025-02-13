@@ -35,4 +35,10 @@ export class CartService {
     this.cartSubject.next(this.cart);
     localStorage.removeItem('cart');
   }
+
+  removeFromCart(index: number) {
+    this.cart.splice(index, 1);
+    this.cartSubject.next([...this.cart]);
+    localStorage.setItem('cart', JSON.stringify(this.cart));
+  }
 }

@@ -42,4 +42,9 @@ export class CarrinhoComponent {
     this.cartService.clearCart();
     alert('Carrinho limpo com sucesso!');
   }
+
+  removerProduto(index: number) {
+    this.cartService.removeFromCart(index);
+    alert('Produto removido com sucesso!');
+  }
 }

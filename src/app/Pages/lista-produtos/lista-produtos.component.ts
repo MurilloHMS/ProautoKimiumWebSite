@@ -20,7 +20,6 @@ export class ListaProdutosComponent {
 
   adicionarAoCarrinho(produto: any) {
     this.cartService.addToCart(produto);
-    alert(`${produto.titulo} adicionado ao carrinho!`);
   }
 
 }
