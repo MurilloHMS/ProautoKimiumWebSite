@@ -25,6 +25,7 @@
                 <button (click)="adicionarAoCarrinho(produto)">Adicionar ao Carrinho</button>
               </div>
             </div>
+            <app-snackbar [message]="snackbarMessage" [isOpen]="showSnackbar"></app-snackbar>
           </section>
     </section>
 </main>
