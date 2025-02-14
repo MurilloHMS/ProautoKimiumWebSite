@@ -17,7 +17,6 @@ export class CarrinhoComponent {
   ngOnInit() {
     this.cartService.getCart().subscribe(produtos => {
       this.produtos = produtos;
-      console.log('Carrinho atualizado:', this.produtos);
     });
   }
 
@@ -40,11 +39,9 @@ export class CarrinhoComponent {
 
   limparCarrinho() {
     this.cartService.clearCart();
-    alert('Carrinho limpo com sucesso!');
   }
 
   removerProduto(index: number) {
     this.cartService.removeFromCart(index);
-    alert('Produto removido com sucesso!');
   }
 }
