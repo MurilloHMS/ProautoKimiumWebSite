@@ -1,0 +1,30 @@
+<div class="cases-sucesso-container">
+    <div class="row">
+        <div class="col-12">
+        <h1 class="text-center">Cases de Sucesso</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+        <p class="text-center">Conheça nossos cases de sucesso e veja como a consultoria da <strong>Proauto Kimium</strong> pode ajudar a sua empresa a crescer.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <app-card-case-sucesso
+            [imagem]="'../../../assets/images/Coco bambu.png'"
+            [titulo]="'Coco Bambu'"
+            [descricao]="'Nossa consultoria de sucesso no cliente Coco Bambu aplicou métodos exclusivos para otimizar processos, reduzir custos e aumentar a eficiência.'"
+            [resultado]="[
+                { texto: 'Redução de Custos: Economia de até 29% em produtos químicos.' },
+                { texto: 'Eficiência Operacional: Otimização de 24% no uso de insumos.' },
+                { texto: 'Setores Beneficiados: Limpeza e cozinha' },
+                { texto: 'Impacto Financeiro: Corte de desperdícios e maior rentabilidade.' }
+            ]"
+            [link]="'/cases-sucesso/coco-bambu'"
+            ></app-card-case-sucesso>
+        </div>
+        </div>
+    </div>
+</div>
