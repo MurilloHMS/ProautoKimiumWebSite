@@ -33,7 +33,7 @@ export class CarrinhoComponent {
     });
 
     const numeroWhatsApp = '5511975797732';
-    const url = `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensagem}`;
+    const url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensagem}`;
     window.open(url, '_blank');
   }
 
