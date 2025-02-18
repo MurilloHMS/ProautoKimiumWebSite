@@ -14,7 +14,7 @@
 .servico {
     width: 50rem;
     height: 36rem;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -51,6 +51,7 @@
 
     p {
         inset: auto auto 80px 30px;
+        font-size: 1.3rem;
     }
 
     a {
@@ -72,7 +73,9 @@
     &:hover img {
         transition: opacity .3s ease-in;
         opacity: 1;
+        filter: brightness(50%);
     }
+
 
 }
 
