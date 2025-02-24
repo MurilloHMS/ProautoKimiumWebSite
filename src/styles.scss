@@ -21,11 +21,10 @@ app-root{
 .content{
     padding-top: 60px;
     flex: 1;
-    background: #f1f2f4f6;
+    background: $primary-background-color;
 }
 
 app-footer{
-    padding: 10px 20px;
     text-align: center;
 }
 /* Importing Bootstrap SCSS file. */
