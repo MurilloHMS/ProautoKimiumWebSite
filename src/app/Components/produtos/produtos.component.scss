@@ -52,11 +52,11 @@ article a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #28666e;
+    color: $primary-color;
 }
 
 article a:focus {
-    outline: 1px dotted #28666e;
+    outline: 1px dotted $primary-color;
 }
 
 article a .icon {
