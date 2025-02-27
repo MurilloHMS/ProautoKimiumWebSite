@@ -43,7 +43,7 @@
 
 .home-banner-content {
     position: relative;
-    z-index: 2;
+    z-index: 1000;
 
     h1 {
         font-size: 4em;
@@ -73,7 +73,7 @@
 }
 
 .blue {
-    color: #0056b3;
+    color: $secondary-color;
     font-weight: bold;
 }
 
