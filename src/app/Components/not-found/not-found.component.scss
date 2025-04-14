@@ -1,0 +1,33 @@
+/* Certifica-se que o fundo da página seja branco e ocupe toda a tela */
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .notFound img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .notFound h1 {
+    color: #555;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 720px) {
+    .notFound h1 {
+        font-size: 2rem;
+    }
+}
+  
