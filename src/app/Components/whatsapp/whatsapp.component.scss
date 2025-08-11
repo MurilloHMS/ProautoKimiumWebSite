@@ -1,19 +1,24 @@
 @import '../../../styles/variables.scss';
 
 .whatsapp-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
     cursor: pointer;
-    background-color: #40c351;
-    border: 0;
-    border-radius: 50%;
-    transition: opacity 0.3s ease-in-out, background 0.3s, transform 0.3s ease-in-out;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    padding: 5px;
     width: 50px;
     height: 50px;
+    font-size: 35px;
+    background-color: $primary-color;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: opacity 0.3s ease-in-out, background 0.3s, transform 0.3s ease-in-out;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
     &:hover {
         background-color: darken($primary-color, 10%);
@@ -24,4 +29,13 @@
         width: 40px;
         height: 40px;
     };
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    
 }
