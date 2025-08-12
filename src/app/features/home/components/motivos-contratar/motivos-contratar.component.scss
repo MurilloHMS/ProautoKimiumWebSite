@@ -1,13 +1,13 @@
 @import '../../../../../styles/variables.scss';
 
 
-.blue {
-    color: $secondary-color;
+.blue-logo {
+    color: $primary-color;
     font-weight: bold;
 }
 
-.green {
-    color: $primary-color;
+.green-logo {
+    color: $secondary-color;
     font-weight: bold;
 }
 
@@ -16,15 +16,13 @@
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
-    background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   
+
 }
 
 .motivos-title h1 {
     font-size: 2rem;
-    color: $text-primary-color;
+    color: $primary-text-color;
     margin-bottom: 20px;
 }
 
@@ -45,7 +43,11 @@
 }
 
 .motivos:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+}
+
+.motivos h3 {
+    font-weight: 400;
 }
 
 .motivos ul {
@@ -61,6 +63,7 @@
     gap: 10px;
     padding: 10px;
     margin-bottom: 10px;
+    font-weight: 300;
 }
 
 .motivos li span {
@@ -71,9 +74,11 @@
     .motivos-container {
         padding: 20px;
     }
+
     .motivos-title h1 {
         font-size: 1.8rem;
     }
+
     .movivos {
         flex: 1 1 100%;
         max-width: 100%;
@@ -84,9 +89,11 @@
     .motivos-title h1 {
         font-size: 1.5rem;
     }
+
     .movivos h3 {
         font-size: 1.3rem;
     }
+
     .movivos li {
         font-size: 1rem;
     }
