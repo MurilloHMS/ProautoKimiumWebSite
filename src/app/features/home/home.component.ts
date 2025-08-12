@@ -5,11 +5,12 @@ import { ConsultoriaComponent } from "./components/consultoria/consultoria.compo
 import { ProcessoConsultoriaComponent } from "./components/processo-consultoria/processo-consultoria.component";
 import { MotivosContratarComponent } from "./components/motivos-contratar/motivos-contratar.component";
 import { ServicosEProdutosComponent } from "./components/servicos-eprodutos/servicos-eprodutos.component";
+import { ServicosOfertadosComponent } from "./components/servicos-ofertados/servicos-ofertados.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselComponent, HeroComponent, ConsultoriaComponent, ProcessoConsultoriaComponent, MotivosContratarComponent, ServicosEProdutosComponent],
+  imports: [CarouselComponent, HeroComponent, ConsultoriaComponent, ProcessoConsultoriaComponent, MotivosContratarComponent, ServicosEProdutosComponent, ServicosOfertadosComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
