@@ -14,7 +14,7 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 
 interface TipoContato{
   label: string;
-  value: string;
+  value: number;
 }
 
 @Component({
@@ -32,16 +32,16 @@ export class ContactComponent {
   form: FormGroup;
   isLoading = false;
   tiposContato: TipoContato[] =[
-    { label: 'Dúvida sobre produtos', value: 'DuvidaProduto' },
-    { label: 'Suporte técnico', value: 'SuporteTecnico' },
-    { label: 'Solicitação de orçamento', value: 'SolicitacaoOrcamento' },
-    { label: 'Representação comercial', value: 'RepresentacaoComercial' },
-    { label: 'Trabalhe conosco', value: 'TrabalheConosco' },
-    { label: 'Consultoria especializada', value: 'ConsultoriaEspecializada' },
-    { label: 'Agendar visita técnica', value: 'VisitaTecnica' },
-    { label: 'Informações sobre certificações', value: 'InformacoesCertificacoes' },
-    { label: 'Problemas com pedido ou entrega', value: 'ProblemaPedidoEntrega' },
-    { label: 'Outros', value: 'Outros' }
+    { label: 'Dúvida sobre produtos', value: 0 },
+    { label: 'Suporte técnico', value: 1 },
+    { label: 'Solicitação de orçamento', value: 2 },
+    { label: 'Representação comercial', value: 3 },
+    { label: 'Trabalhe conosco', value: 4 },
+    { label: 'Consultoria especializada', value: 5 },
+    { label: 'Agendar visita técnica', value: 6 },
+    { label: 'Informações sobre certificações', value: 7 },
+    { label: 'Problemas com pedido ou entrega', value: 8 },
+    { label: 'Outros', value: 0 }
   ];
 
   constructor(private fb: FormBuilder,
@@ -66,7 +66,7 @@ export class ContactComponent {
 
     const contato = {
       ...this.form.value,
-      statusContato: 'NaoContatado',
+      statusContato: 0,
       dataSolicitadoContato: new Date().toISOString()
     };
 
@@ -79,7 +79,7 @@ export class ContactComponent {
       },
       error: (err) =>{
         this.isLoading = false;
-        this.messageService.add({severity: 'error', summary: 'Error', detail: err.message})
+        this.messageService.add({severity: 'error', summary: 'Error', detail: 'Ocorreu um erro ao entrar em contato, por favor utilize os dados ao lado.'})
       }
     });
   }
