@@ -10,16 +10,34 @@
 
     <nav class="menu" [class.active]="menuAberto">
         <ul>
-            <li><a routerLink="">Home</a></li>
+			<li><a href="">Início</a></li>
             <li><a routerLink="produtos/lista">Produtos</a></li>
-            <li><a routerLink="empresa">Empresa</a></li>
-            <li><a routerLink="clientes">Clientes</a></li>
-            <li><a routerLink="contato">Contato</a></li>
-        </ul>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle">
+					Empresa
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a href="about-us" class="dropdown-item">Sobre Nós</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#">
+					Parceiros
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="partners/distributors">Distribuidores</a>
+				</div>
+			</li>
+		</ul>
     </nav>
 
     <div>
         <ul class="grp-menu">
+            <li class="menu">
+                <a routerLink="login">
+                    Login
+                </a>
+            </li>
             <li class="carrinho-container">
                 <a routerLink="carrinho">
                     <img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras">

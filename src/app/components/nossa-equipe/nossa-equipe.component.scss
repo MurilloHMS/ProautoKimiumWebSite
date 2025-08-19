@@ -1,0 +1,130 @@
+body {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	font-family: "Montserrat";
+}
+
+.equipe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 5px 50px;
+	color: #e8e8ea;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+    background: #f5f2f7;
+}
+.content {
+	transform: translatez(80px) scale(0.8);
+	line-height: 1em;
+    background: transparent;
+}
+.content h1 {
+	position: relative;
+}
+.content p {
+	margin-top: 30px;
+	line-height: 2em;
+}
+
+.content img {
+    width: 80px;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	height: 3px;
+	background-color: #a4ddd2;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+    background-color: #1b224d;
+}
+.back {
+	background-color: #1b224d;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 0;
+}
+.container:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+form {
+	text-align: left;
+}
+.back h1 {
+	margin: 0;
+}
+form label,
+form input {
+	display: block;
+}
+form input,
+form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #ccc;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+form label {
+	margin: 3px 0;
+}
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 5px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
