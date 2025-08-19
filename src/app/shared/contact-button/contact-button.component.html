@@ -1,5 +1,5 @@
 
-<button pButton type="button" [label]="label" [icon]="icon" (click)="openContact()"></button>
+<button class="custom-button" pButton type="button" [label]="label" [icon]="icon" (click)="openContact()"></button>
 
 <p-dialog header="Entre em contato" [(visible)]="displayContact" [modal]="true" [closable]="true" [style]="{width: '50vw'}">
   <app-contact></app-contact>
