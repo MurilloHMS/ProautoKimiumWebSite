@@ -2,6 +2,8 @@
 @import "./variables.scss";
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
 
 html {
     scroll-behavior: smooth;
@@ -21,7 +23,7 @@ app-root{
 }
 
 .content{
-    padding-top: 70px;
+    padding-top: px;
     flex: 1;
     background: #f1f2f4
 }
