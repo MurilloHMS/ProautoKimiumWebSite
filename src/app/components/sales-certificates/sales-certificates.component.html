@@ -1,0 +1,45 @@
+<div class="container">
+  <h4 class="text-center mt-4">
+    <b>Parabéns! Você está à um passo de conquistar seu certificado.</b>
+  </h4>
+  <p class="text-center">
+    Este certificado significa que você participou do treinamento <b>Gestão, Higiêne e Limpeza</b>
+  </p>
+
+  <iframe width="350" height="315"
+          src="https://www.youtube.com/embed/l4ESEUUkqUQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+  </iframe>
+
+  <p class="text-center text-primary mt-3">
+    Preencha os campos a seguir para ter acesso ao seu certificado.
+  </p>
+
+  <div class="card p-3 mt-2">
+    <form [formGroup]="form">
+      <div class="mb-2">
+        <label>Nome completo</label>
+        <input type="text" class="form-control" formControlName="nome">
+      </div>
+      <div class="mb-2">
+        <label>Email</label>
+        <input type="email" class="form-control" formControlName="email">
+      </div>
+      <div class="mb-2">
+        <label>WhatsApp</label>
+        <input type="text" class="form-control" formControlName="contato">
+      </div>
+    </form>
+  </div>
+
+  <div class="text-center mt-3">
+    <button class="btn btn-primary" 
+            [disabled]="form.invalid" 
+            (click)="gerarCertificado()">
+      Gerar Certificado
+    </button>
+  </div>
+</div>

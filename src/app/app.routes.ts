@@ -10,6 +10,7 @@ import { ListaProdutosComponent } from './components/lista-produtos/lista-produt
 import { LoginComponent } from './components/login/login.component';
 import { NossaEquipeComponent } from './components/nossa-equipe/nossa-equipe.component';
 import { InstitucionalComponent } from './components/institucional/institucional.component';
+import { SalesCertificatesComponent } from './components/sales-certificates/sales-certificates.component';
 
 
 export const routes: Routes = [
@@ -23,6 +24,7 @@ export const routes: Routes = [
     { path:  'cases-sucesso', component: CasesSucessoComponent, pathMatch: 'full'},
     { path: '404', component: NotFoundComponent},
     { path: 'privacy-policy', component: InstitucionalComponent, pathMatch: 'full'},
+    { path: 'sales/documents/certificates', component: SalesCertificatesComponent, pathMatch: 'full'},
     { path: '**', redirectTo: '404'}
 ];
 
