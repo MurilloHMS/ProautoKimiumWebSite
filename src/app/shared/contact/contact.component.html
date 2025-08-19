@@ -1,0 +1,58 @@
+<p-toast></p-toast>
+
+<div class="p-grid p-fluid">
+  <div class="p-col-12 p-md-7">
+    <div class="card">
+      <h3>Entre em contato</h3>
+      <form [formGroup]="form">
+        <div class="p-field">
+          <label>Nome</label>
+          <input pInputText formControlName="nome" />
+        </div>
+
+        <div class="p-field">
+          <label>Email</label>
+          <input pInputText formControlName="email" />
+        </div>
+
+        <div class="p-field">
+          <label>Nome Empresa</label>
+          <input pInputText formControlName="nomeEmpresa" />
+        </div>
+
+        <div class="p-field">
+          <label>Motivo</label>
+          <p-dropdown [options]="tiposContato" optionLabel="label" optionValue="value"
+                      formControlName="tipoContato" placeholder="Selecione"></p-dropdown>
+        </div>
+
+        <div class="p-field" *ngIf="form.value.tipoContato === 'Outros'">
+          <label>Digite o motivo</label>
+          <input pInputText formControlName="outro" />
+        </div>
+
+        <div class="p-field">
+          <label>Mensagem</label>
+          <textarea pInputTextarea rows="5" formControlName="mensagem"></textarea>
+        </div>
+
+        <div class="p-field text-center">
+          <button pButton type="button" label="Enviar" (click)="submit()" [disabled]="isLoading"></button>
+          <p-progressSpinner *ngIf="isLoading"></p-progressSpinner>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="p-col-12 p-md-5">
+    <div class="card">
+      <h4>Outros meios de contato</h4>
+      <a href="https://wa.me/05511983583564" target="_blank">(11) 9 8358-3564</a><br>
+      <a href="https://wa.me/05511957782766" target="_blank">(11) 9 5778-2766</a><br>
+      <a href="mailto:sac&#64;proautokimium.com.br">sac&#64;proautokimium.com.br</a><br>
+      <a href="https://maps.app.goo.gl/LujYJt2qmgmMSbN2A" target="_blank">
+        Av. João do Prado, 300 - Capuava, Santo André - SP
+      </a>
+    </div>
+  </div>
+</div>
