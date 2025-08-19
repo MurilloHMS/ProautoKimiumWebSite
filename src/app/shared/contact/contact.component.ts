@@ -9,7 +9,8 @@ import { ButtonModule } from 'primeng/button';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast'
-import { ArgumentOutOfRangeError } from 'rxjs';
+import { environment } from '../../../environments/environment';
+import { FloatLabelModule } from 'primeng/floatlabel';
 
 interface TipoContato{
   label: string;
@@ -21,7 +22,7 @@ interface TipoContato{
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, HttpClientModule, InputTextModule,
     InputTextareaModule, DropdownModule, ButtonModule, ProgressSpinnerModule,
-    ToastModule
+    ToastModule, FloatLabelModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
@@ -70,7 +71,7 @@ export class ContactComponent {
     };
 
     this.isLoading = true;
-    this.http.post('api/contato', contato, {responseType: 'text' }).subscribe({
+    this.http.post(`${environment.apiUrl}/contato`, contato, {responseType: 'text' }).subscribe({
       next: (res) => {
         this.isLoading = false;
         this.messageService.add({severity: 'success', summary: 'Sucesso', detail: res});
