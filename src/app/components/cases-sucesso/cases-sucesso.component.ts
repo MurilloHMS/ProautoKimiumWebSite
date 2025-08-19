@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { CardCaseSucessoComponent } from '../../Components/card-case-sucesso/card-case-sucesso.component';
+import { CardCaseSucessoComponent } from '../../shared/card-case-sucesso/card-case-sucesso.component';
 
 @Component({
   selector: 'app-cases-sucesso',
