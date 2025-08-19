@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://api.proautokimium.com/api'
+  apiUrl: 'http://localhost:5007/api'
 };

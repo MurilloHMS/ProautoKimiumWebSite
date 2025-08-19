@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, ɵInternalFormsSharedModule } from '@angular/forms';
 import { AuthService } from '../../Core/services/auth.service';
 import { Router } from '@angular/router';
-import { NgIf } from "../../../../node_modules/@angular/common/index";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ɵInternalFormsSharedModule, NgIf, ReactiveFormsModule],
+  imports: [ɵInternalFormsSharedModule, CommonModule, ReactiveFormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
