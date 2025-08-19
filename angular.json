@@ -32,7 +32,8 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles/styles.scss"
-            ],
+            ]
+            ,
             "scripts": [
               "src/assets/js/animations.js",
               "src/assets/js/Download.js",
