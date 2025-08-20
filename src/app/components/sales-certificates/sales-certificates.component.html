@@ -30,7 +30,7 @@
       </div>
       <div class="mb-2">
         <label>WhatsApp</label>
-        <input type="text" class="form-control" formControlName="contato">
+        <input type="tel" pattern="[0-9]*" maxlength="11" inputmode="numeric" class="form-control" formControlName="contato" (keypress)="$event.charCode >= 48 && $event.charCode <= 57">
       </div>
     </form>
   </div>
