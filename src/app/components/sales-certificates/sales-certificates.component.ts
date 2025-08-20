@@ -14,6 +14,7 @@ declare const generateCertificate: any;
 })
 export class SalesCertificatesComponent implements OnInit{
   form: FormGroup;
+  type: number | null = null;
   isMobile: boolean = false;
 
   constructor(
@@ -24,11 +25,13 @@ export class SalesCertificatesComponent implements OnInit{
     this.form = this.fb.group({
       nome: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      contato: ['', Validators.required]
+      contato: ['', [Validators.required, Validators.pattern('^[0-9]{10,11}$')]]
     });
   }
 
   ngOnInit(): void {
+    this.type = Number(this.route.snapshot.queryParamMap.get('type'));
+
     this.isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if(!this.isMobile){
       this.router.navigate(['/']);
@@ -38,7 +41,12 @@ export class SalesCertificatesComponent implements OnInit{
   gerarCertificado(){
     if(this.form.valid){
       const nomeFormatado = this.capitalize(this.form.value.nome);
-      generateCertificate(nomeFormatado);
+
+      if(this.type != 0){
+        generateCertificate(nomeFormatado, this.type);
+      }else{
+        generateCertificate(nomeFormatado,2);
+      }
     }
   }
 
