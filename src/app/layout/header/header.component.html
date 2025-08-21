@@ -33,14 +33,13 @@
 
     <div>
         <ul class="grp-menu">
-            <li class="menu">
-                <a href="/client/">
-                    Login
-                </a>
-            </li>
             <li class="carrinho-container">
+                <a href="/client/">
+                    <i class="fa fa-sign-in"></i>
+                </a>
+                &nbsp;
                 <a routerLink="carrinho">
-                    <img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras">
+                    <i class="fas fa-shopping-cart"></i>
                     <span class="badge" *ngIf="quantidadeProdutos > 0">{{ quantidadeProdutos }}</span>
                 </a>
             </li>
