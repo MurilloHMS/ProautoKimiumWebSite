@@ -10,37 +10,36 @@
 
     <nav class="menu" [class.active]="menuAberto">
         <ul>
-			<li><a href="">Início</a></li>
+			<li><a routerLink="">Início</a></li>
             <li><a routerLink="produtos/lista">Produtos</a></li>
 			<li class="nav-item dropdown">
-				<a href="#" class="nav-link dropdown-toggle">
+				<a class="nav-link dropdown-toggle">
 					Empresa
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a href="about-us" class="dropdown-item">Sobre Nós</a>
+					<a routerLink="about-us" class="dropdown-item">Sobre Nós</a>
 				</div>
 			</li>
-			<li class="nav-item dropdown">
+			<!-- <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle">
 					Parceiros
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="partners/distributors">Distribuidores</a>
 				</div>
-			</li>
+			</li> -->
 		</ul>
     </nav>
 
     <div>
         <ul class="grp-menu">
-            <li class="menu">
-                <a href="/client/">
-                    Login
-                </a>
-            </li>
             <li class="carrinho-container">
+                <a href="/client/">
+                    <i class="fa fa-sign-in"></i>
+                </a>
+                &nbsp;
                 <a routerLink="carrinho">
-                    <img src="../../../assets/images/carrinho-compras.png" alt="Carrinho de compras">
+                    <i class="fas fa-shopping-cart"></i>
                     <span class="badge" *ngIf="quantidadeProdutos > 0">{{ quantidadeProdutos }}</span>
                 </a>
             </li>

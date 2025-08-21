@@ -24,7 +24,7 @@ export const routes: Routes = [
     { path: '404', component: NotFoundComponent},
     { path: 'privacy-policy', component: InstitucionalComponent, pathMatch: 'full'},
     { path: 'sales/documents/certificates', component: SalesCertificatesComponent, pathMatch: 'full'},
-    { path: 'faq', component: FaqComponent, pathMatch: 'full'},
+    { path: 'support/faq', component: FaqComponent, pathMatch: 'full'},
     { path: '**', redirectTo: '404'}
 ];
 
