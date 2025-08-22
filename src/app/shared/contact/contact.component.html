@@ -74,7 +74,7 @@
               <p-dropdown [options]="tiposContato" optionLabel="label" optionValue="value"
                 formControlName="tipoContato" inputId="float-label" placeholder="Motivos de contato" required/>
            </div>
-            <div class="input-container" *ngIf="form.value.tipoContato === 'Outros'">
+            <div class="input-container" *ngIf="form.value.tipoContato === 9">
               <input pInputText formControlName="outro" class="input"/>
               <label for="">Digite o motivo</label>
               <span>Digite o motivo</span>
