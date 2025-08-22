@@ -6,7 +6,6 @@ import { EmpresaComponent } from './components/empresa/empresa.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListaProdutosComponent } from './components/lista-produtos/lista-produtos.component';
 import { LoginComponent } from './components/login/login.component';
-import { NossaEquipeComponent } from './components/nossa-equipe/nossa-equipe.component';
 import { InstitucionalComponent } from './components/institucional/institucional.component';
 import { SalesCertificatesComponent } from './components/sales-certificates/sales-certificates.component';
 import { FaqComponent } from './components/faq/faq.component';
@@ -14,7 +13,6 @@ import { FaqComponent } from './components/faq/faq.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, pathMatch: 'full'},
-    { path: 'nossaEquipe', component: NossaEquipeComponent, pathMatch: 'full'},
     { path: 'about-us', component: EmpresaComponent, pathMatch: 'full'},
     { path: 'carrinho', component: CarrinhoComponent, pathMatch: 'full'},
     { path: 'login', component: LoginComponent, pathMatch: 'full'},
