@@ -99,36 +99,14 @@
     margin: 0 10px;
 }
 
-.grp-menu a img{
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s;
+.grp-menu a{
+    font-size: 1rem;
+    color: $secondary-color
 }
 
-.grp-menu a:hover img{
-    transform: scale(1.2);
-}
-
-.grp-menu button{
-    background-color: $primary-color ;
-    width: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 5px 20px;
-    border-radius: 12px;
-    border-color: transparent;
-    color: white;
-}
-
-.grp-menu button:hover{
-    transform: scale(1.2);
+.grp-menu a:hover{
     cursor: pointer;
-}
-
-.grp-menu button a{
-    text-decoration: none;
-    color: white;
+    color: $primary-color;
 }
 
 .carrinho-container {

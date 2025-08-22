@@ -41,7 +41,7 @@ export class ContactComponent {
     { label: 'Agendar visita técnica', value: 6 },
     { label: 'Informações sobre certificações', value: 7 },
     { label: 'Problemas com pedido ou entrega', value: 8 },
-    { label: 'Outros', value: 0 }
+    { label: 'Outros', value: 9 }
   ];
 
   constructor(private fb: FormBuilder,

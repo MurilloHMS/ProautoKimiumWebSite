@@ -6,13 +6,6 @@
     padding: 20px;
 }
 
-
-
-
-
-
-
-
 .home-about-us,
 .home-nossos-valores {
     display: flex;
@@ -79,7 +72,7 @@
     }
 
     button {
-        background-color: $banner-color;
+        background-color: $tertiary-color;
         font-weight: bold;
         margin: 0;
         padding: 5px 20px;
